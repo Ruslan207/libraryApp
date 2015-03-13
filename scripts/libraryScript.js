@@ -62,11 +62,11 @@ libraryApp.controller('mainCtrl', function ($scope, $location, $rootScope) {
         success: function(data){
             $scope.books = data.books;
             $scope.authors = data.authors;
-            console.log($scope.books);
-            console.log($scope.authors);
             try{
-                $rootScope.$digest()
-            } finally {}
+                $scope.$digest();
+            } finally {
+                $rootScope.$emit('dataLoaded');
+            }
         }
     });
     $scope.setPage = function (page){
@@ -103,25 +103,40 @@ libraryApp.controller('authorsController', function ($scope) {
     });
 })
 
-libraryApp.controller('bookDetailController', function ($scope, $routeParams) {
+libraryApp.controller('bookDetailController', function ($scope, $routeParams, $rootScope) {
     for (var i = 0; i < $scope.books.length; i++){
         if ($scope.books[i].id == $routeParams.bookId){
             $scope.book = $scope.books[i];
             break;
         }
     }
+    $rootScope.$on('dataLoaded', function() {
+        try{
+            $scope.$apply();
+        } finally {};
+    });
 })
 
-libraryApp.controller('authorDetailController', function ($scope, $routeParams) {
+libraryApp.controller('authorDetailController', function ($scope, $routeParams, $rootScope) {
     for (var i = 0; i < $scope.authors.length; i++){
         if ($scope.authors[i].id == $routeParams.authorId){
             $scope.author = $scope.authors[i];
             break;
         }
     }
+    $rootScope.$on('dataLoaded', function() {
+        try{
+            $scope.$apply();
+        } finally {};
+    });
 })
 
 
-libraryApp.controller('genreController', function ($scope, $routeParams) {
+libraryApp.controller('genreController', function ($scope, $routeParams, $rootScope) {
     $scope.genre = $routeParams.genre;
+    $rootScope.$on('dataLoaded', function() {
+        try{
+            $scope.$apply();
+        } finally {};
+    });
 })
