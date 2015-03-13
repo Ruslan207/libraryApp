@@ -8,7 +8,8 @@
     <script src="scripts/angular-route.js"></script>
     <script src="scripts/libraryScript.js"></script>
     <link rel="stylesheet" href="style/materialize.css">
-    <!--sorry for it, but I'm too lazy to create new css file for two rules-->
+    <!--sorry for it, but I'm too lazy to create new css
+    file for two rules and onefix-->
     <style type="text/css">
         *{
             cursor: default;
@@ -16,11 +17,15 @@
         *[ng-click^="setPage("]{
             cursor: pointer;
         }
+        @media screen and (-webkit-min-device-pixel-ratio:0) { 
+            nav{overflow: inherit !important;} 
+        }
     </style>
     <title>Library</title>
 </head>
 <body ng-controller="mainCtrl">
     <div id="main container">
+        <div class="navbar-fixed">
             <nav>
                 <div class="navbar-fixed nav-wrapper purple lighten-1">
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -34,6 +39,7 @@
                     </ul>
                 </div>
             </nav>
+        </div>
         <div ng-view>
 
         </div>
