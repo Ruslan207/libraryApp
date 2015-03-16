@@ -1,10 +1,14 @@
-<div ng-repeat="author in authors">
-    <a class='dropdown-button btn' data-activates='dropdown{{author.id}}'>
-        {{author.name}}
-    </a>
-    <ul id='dropdown{{author.id}}' class='dropdown-content'>
-        <li ng-click="setPage('author/'+author.id)"><a>See detail</a></li>
-        <li class="divider"></li>
-        <li ng-click="setPage('book/'+book.id)" ng-repeat="book in books | byAuthor: author.id "><a>{{book.name}}</a></li>
-    </ul>
+<div class="row">
+    <div ng-repeat="author in authors" class="grid-example col s12 m6 l3">
+        <div class="card-panel indigo lighten-1"  data-activates='dropdown{{author.id}}'>
+            <div class="card-content white-text">
+                <span class="card-title">{{author.name}}</span>
+            </div>
+        </div>
+        <ul id='dropdown{{author.id}}' class='dropdown-content'>
+            <li ng-click="setPage('author/'+author.id)"><a>See detail</a></li>
+            <li class="divider"></li>
+            <li ng-click="setPage('book/'+book.id)" ng-repeat="book in books | byAuthor: author.id "><a>{{book.name}}</a></li>
+        </ul>
+    </div>
 </div>

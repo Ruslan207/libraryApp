@@ -1,6 +1,5 @@
-<h1>{{author.name}}</h1>
-<h4>{{author.biography}}</h4>
-<h3 ng-repeat="book in books | byAuthor: author.id " ng-click="setPage('book/'+book.id)">{{book.name}}</h3>
-<div>
-    {{book.summary}}
+<div class="row container">
+    <h2 class="header indigo-text text-darken-2">{{author.name}}</h2>
+    <p class="grey-text text-darken-3 lighten-3">{{author.biography}}</p>
+    <h4 class="blue-text text-darken-2" ng-repeat="book in books | byAuthor: author.id " ng-click="setPage('book/'+book.id)">{{book.name}}</h4>
 </div>

@@ -1,6 +1,11 @@
-<h1>{{book.name}}</h1>
-<h2 ng-click="setPage('genre/'+book.genre)">{{book.genre}}</h2>
-<h3 ng-repeat="authorId in book.authors" ng-click="setPage('author/'+authorId)">{{getAuthorById(authorId).name}}</h3>
-<div>
-    {{book.summary}}
+<div class="row container">
+    <h2 class="header indigo-text text-darken-2">{{book.name}}</h2>
+    <span class="card-title grey-text text-darken-4"> Author{{book.authors.length>1 ? 's': ''}}:</span>
+    <span class="card-title blue-text" ng-repeat="authorId in book.authors"
+          ng-click="setPage('author/'+authorId)">{{getAuthorById(authorId).name}} </span>
+    <p>
+        Genre:
+        <span class="blue-text" ng-click="setPage('genre/'+book.genre)">{{book.genre}}</span>
+    </p>
+    <p class="grey-text text-darken-3 lighten-3">{{book.summary}}</p>
 </div>

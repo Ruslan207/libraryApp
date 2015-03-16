@@ -4,8 +4,8 @@ libraryApp.config(function($routeProvider) {
     $routeProvider
 
         .when('/', {
-            templateUrl : 'pages/books.html',
-            controller  : 'booksController'
+            templateUrl : 'pages/books.html'
+            //controller  : 'booksController'
         })
 
         .when('/books', {
@@ -54,6 +54,8 @@ libraryApp.filter('byAuthor', function () {
 
 libraryApp.controller('mainCtrl', function ($scope, $location) {
     $scope.text = 'test';
+    $scope.books = [];
+    $scope.authors = [];
     $scope.setPage = function (page){
         $location.path('/'+page);
     }
@@ -64,6 +66,11 @@ libraryApp.controller('mainCtrl', function ($scope, $location) {
             }
         }
     }
+    $(document).ready(function() {
+        setTimeout(function () {
+            $(".button-collapse").sideNav();
+        }, 0);
+    });
     $.ajax({
         method: "GET",
         url: "db.json",
@@ -71,7 +78,7 @@ libraryApp.controller('mainCtrl', function ($scope, $location) {
             $scope.books = data.books;
             $scope.authors = data.authors;
             try{
-                $scope.$apply()
+                $scope.$digest()
             } finally {}
         }
     });
@@ -80,7 +87,7 @@ libraryApp.controller('mainCtrl', function ($scope, $location) {
 libraryApp.controller('authorsController', function ($scope) {
     $(document).ready(function(){
         setTimeout(function() {
-            $('.dropdown-button').dropdown({
+            $('.card-panel').dropdown({
                     inDuration: 300,
                     outDuration: 225,
                     constrain_width: false, // Does not change width of dropdown to that of the activator

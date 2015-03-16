@@ -1,10 +1,12 @@
 <div class="row">
-    <div ng-repeat="book in books" class="grid-example col s12 m6 l3">
-        <div class="card red lighten-1">
+    <div ng-repeat="book in books" class="col s12 m6 l3">
+        <div class="card small indigo lighten-1">
             <div class="card-content white-text">
                 <span class="card-title" ng-click="setPage('book/'+book.id)">{{book.name}}</span>
-                <p ng-repeat="authorId in book.authors"  ng-click="setPage('author/'+getAuthorById(authorId).id)">
-                    {{getAuthorById(authorId).name}}
+                <p class="card-action">
+                    <span ng-repeat="authorId in book.authors"  ng-click="setPage('author/'+getAuthorById(authorId).id)">
+                        {{getAuthorById(authorId).name}}
+                    </span>
                 </p>
             </div>
         </div>
