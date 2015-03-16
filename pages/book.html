@@ -1,0 +1,6 @@
+<h1>{{book.name}}</h1>
+<h2 ng-click="setPage('genre/'+book.genre)">{{book.genre}}</h2>
+<h3 ng-repeat="authorId in book.authors" ng-click="setPage('author/'+authorId)">{{getAuthorById(authorId).name}}</h3>
+<div>
+    {{book.summary}}
+</div>

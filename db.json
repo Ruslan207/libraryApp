@@ -1,0 +1,108 @@
+{
+  "books":[
+    {
+      "id":0,
+      "name":"The Shining",
+      "authors":[0],
+      "genre":"horror",
+      "summary":"Danny is only five years old, but he is a 'shiner', aglow with psychic voltage. When his father becomes caretaker of an old hotel, his visions grow out of control. Cut off by blizzards, the hotel seems to develop an evil force, and who are the mysterious guests in the supposedly empty hotel?"
+    },
+    {
+      "id":1,
+      "name":"Under the Dome",
+      "authors":[0],
+      "genre":"adventures",
+      "summary":"It is the story of the small town of Chester's Mill, Maine which is inexplicably and suddenly sealed off from the rest of the world by an invisible force field. No one can get in and no one can get out."
+    },
+    {
+      "id":2,
+      "name":"Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
+      "authors":[3, 4],
+      "genre":"fantasy",
+      "summary":"So the armies of Good and Evil are amassing, Atlantis is rising, frogs are falling, tempers are flaring. Everything appears to be going according to Divine Plan. Except a somewhat fussy angel and a fast-living demon—both of whom have lived amongst Earth's mortals since The Beginning and have grown rather fond of the lifestyle—are not actually looking forward to the coming Rapture."
+    },
+    {
+      "id":3,
+      "name":"American Gods: The Tenth Anniversary Edition",
+      "authors":[3],
+      "genre":"fantasy",
+      "summary":"Locked behind bars for three years, Shadow did his time, quietly waiting for the magic day when he could return to Eagle Point, Indiana. A man no longer scared of what tomorrow might bring, all he wanted was to be with Laura, the wife he deeply loved, and start a new life."
+    },
+    {
+      "id":4,
+      "name":"The Lord of the Rings",
+      "authors":[2],
+      "genre":"fantasy",
+      "summary":"One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them. In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell by chance into the hands of the hobbit Bilbo Baggins."
+    },
+    {
+      "id":5,
+      "name":"The Silmarillion",
+      "authors":[2],
+      "genre":"fantasy",
+      "summary":"The Silmarillion is an account of the Elder Days, of the First Age of Tolkien’s world. It is the ancient drama to which the characters in The Lord of the Rings look back, and in whose events some of them such as Elrond and Galadriel took part. The tales of The Silmarillion are set in an age when Morgoth, the first Dark Lord, dwelt in Middle-Earth, and the High Elves made war upon him for the recovery of the Silmarils, the jewels containing the pure light of Valinor."
+    },
+    {
+      "id":6,
+      "name":"Unfinished Tales",
+      "authors":[2],
+      "genre":"fantasy",
+      "summary":"Unfinished Tales is a collection of narratives ranging in time from the Elder Days of Middle-earth to the end of the War of the Ring, and provides those who have read The Lord of the Rings with a whole collection of background and new stories from the twentieth century’s most acclaimed popular author."
+    },
+    {
+      "id":7,
+      "name":"And Then There Were None",
+      "authors":[1],
+      "genre":"action",
+      "summary":"Eight people of different social classes have been invited to a mansion on the fictional Soldier(Indian) Island ('Nigger Island' in the original 1939 UK publication, 'Indian Island' in the 1964 US publication), which is based upon Burgh Island off the coast of Devon. Upon arriving, they are told that their hosts, a Mr. and Mrs. U.N. Owen (Ulick Norman Owen and Una Nancy Owen ), are currently away, but that the guests will be attended to by Thomas and Ethel Rogers. Each guest finds in his or her room an odd bit of bric-a-brac and a framed copy of the nursery rhyme 'Ten Little Soldiers' ('Niggers' or 'Indians' in respective earlier editions) hanging on the wall."
+    },
+    {
+      "id":8,
+      "name":"After the Funeral",
+      "authors":[1],
+      "genre":"action",
+      "summary":"The master of a Victorian mansion dies suddenly – and his sister is convinced it was murder.... When Cora is savagely murdered with a hatchet, the extraordinary remark she made the previous day at her brother Richard’s funeral suddenly takes on a chilling significance. At the reading of Richard’s will, Cora was clearly heard to say: ‘It’s been hushed up very nicely, hasn’t it...But he was murdered, wasn’t he?’ In desperation, the family solicitor turns to Hercule Poirot to unravel the mystery."
+    },
+    {
+      "id":9,
+      "name":"The Murder of Roger Ackroyd",
+      "authors":[1],
+      "genre":"action",
+      "summary":"Roger Ackroyd knew too much. He knew that the woman he loved had poisoned her brutal first husband. He suspected also that someone had been blackmailing her. Now, tragically, came the news that she had taken her own life with a drug overdose.But the evening post brought Roger one last fatal scrap of information. Unfortunately, before he could finish the letter, he was stabbed to death..."
+    },
+    {
+      "id":10,
+      "name":"Cat Among the Pigeons",
+      "authors":[1],
+      "genre":"action",
+      "summary":"Unpleasant things are going on in an exclusive school for girls – things like murder... Late one night, two teachers investigate a mysterious flashing light in the sports pavilion, while the rest of the school sleeps. There, among the lacrosse sticks, they stumble upon the body of the unpopular games mistress – shot through the heart from point blank range. The school is thrown into chaos when the ‘cat’ strikes again. Unfortunately, schoolgirl Julia Upjohn knows too much. In particular, she knows that without Hercule Poirot’s help, she will be the next victim..."
+    }
+  ],
+  "authors":[
+    {
+      "id":0,
+      "name":"Stephen King",
+      "biography":"Stephen Edwin King (born September 21, 1947) is an American author of contemporary horror, supernatural fiction, suspense, science fiction, and fantasy. His books have sold more than 350 million copies, many of which have been adapted into feature films, television movies, and comic books. King has published 54 novels, including seven under the pen name Richard Bachman and six non-fiction books. He has written nearly 200 short stories, most of which have been collected in book collections. Many of his stories are set in his home state of Maine."
+    },
+    {
+      "id":1,
+      "name":"Agatha Christie",
+      "biography":"Dame Agatha Mary Clarissa Christie (15 September 1890 – 12 January 1976) was an English crime novelist, short story writer, and playwright. She also wrote six romances under the name Mary Westmacott, but she is best known for the 66 detective novels and 14 short story collections she wrote under her own name, most of which revolve around the investigations of such characters as Hercule Poirot, Jane Marple, Parker Pyne, Harley Quin/Mr Satterthwaite, and Tommy and Tuppence Beresford. She wrote the world's longest-running play, The Mousetrap."
+    },
+    {
+      "id":2,
+      "name":"J.R.R. Tolkien",
+      "biography":"John Ronald Reuel Tolkien (3 January 1892 – 2 September 1973) was an English writer, poet, philologist, and university professor who is best known as the author of the classic high-fantasy works The Hobbit, The Lord of the Rings, and The Silmarillion."
+    },
+    {
+      "id":3,
+      "name":"Neil Gaiman",
+      "biography":"Neil Richard MacKinnon Gaiman (born Neil Richard Gaiman; 10 November 1960) is an English author of short fiction, novels, comic books, graphic novels, audio theatre and films. His notable works include the comic book series The Sandman and novels Stardust, American Gods, Coraline, and The Graveyard Book. He has won numerous awards, including the Hugo, Nebula, and Bram Stoker awards, as well as the Newbery and Carnegie medals. He is the first author to win both the Newbery and the Carnegie medals for the same work, The Graveyard Book (2008). In 2013, The Ocean at the End of the Lane was voted Book of the Year in the British National Book Awards."
+    },
+    {
+      "id":4,
+      "name":"Terry Pratchett",
+      "biography":"Sir Terence David John 'Terry' Pratchett, (28 April 1948 – 12 March 2015) was an English author of fantasy novels, especially comical works.[2] He is best known for his Discworld series of about 40 volumes. Pratchett's first novel, The Carpet People, was published in 1971, and since his first Discworld novel (The Colour of Magic) was published in 1983, he wrote two books a year on average. His 2011 Discworld novel Snuff was at the time of its release the third-fastest-selling hardback adult-audience novel since records began in the UK, selling 55,000 copies in the first three days."
+    }
+  ]
+}

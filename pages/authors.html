@@ -1,0 +1,10 @@
+<div ng-repeat="author in authors">
+    <a class='dropdown-button btn' data-activates='dropdown{{author.id}}'>
+        {{author.name}}
+    </a>
+    <ul id='dropdown{{author.id}}' class='dropdown-content'>
+        <li ng-click="setPage('author/'+author.id)"><a>See detail</a></li>
+        <li class="divider"></li>
+        <li ng-click="setPage('book/'+book.id)" ng-repeat="book in books | byAuthor: author.id "><a>{{book.name}}</a></li>
+    </ul>
+</div>
