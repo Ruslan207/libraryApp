@@ -52,10 +52,23 @@ libraryApp.filter('byAuthor', function () {
     };
 });
 
-libraryApp.controller('mainCtrl', function ($scope, $location) {
+libraryApp.controller('mainCtrl', function ($scope, $location, $rootScope) {
     $scope.text = 'test';
     $scope.books = [];
     $scope.authors = [];
+    $.ajax({
+        method: "GET",
+        url: "db.json",
+        success: function(data){
+            $scope.books = data.books;
+            $scope.authors = data.authors;
+            console.log($scope.books);
+            console.log($scope.authors);
+            try{
+                $rootScope.$digest()
+            } finally {}
+        }
+    });
     $scope.setPage = function (page){
         $location.path('/'+page);
     }
@@ -70,17 +83,6 @@ libraryApp.controller('mainCtrl', function ($scope, $location) {
         setTimeout(function () {
             $(".button-collapse").sideNav();
         }, 0);
-    });
-    $.ajax({
-        method: "GET",
-        url: "db.json",
-        success: function(data){
-            $scope.books = data.books;
-            $scope.authors = data.authors;
-            try{
-                $scope.$digest()
-            } finally {}
-        }
     });
 })
 

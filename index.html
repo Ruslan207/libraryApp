@@ -8,6 +8,15 @@
     <script src="scripts/angular-route.js"></script>
     <script src="scripts/libraryScript.js"></script>
     <link rel="stylesheet" href="style/materialize.css">
+    <!--sorry for it, but I'm too lazy to create new css file for two rules-->
+    <style type="text/css">
+        *{
+            cursor: default;
+        }
+        *[ng-click^="setPage("]{
+            cursor: pointer;
+        }
+    </style>
     <title>Library</title>
 </head>
 <body ng-controller="mainCtrl">
